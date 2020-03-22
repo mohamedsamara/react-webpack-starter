@@ -1,0 +1,32 @@
+{
+  "name": "react-webpack-starter",
+  "version": "1.0.0",
+  "description": "React Webpack Starter",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf build",
+    "build": "cross-env NODE_ENV=production webpack --mode=production  --config webpack/webpack.prod.js --color --progress",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --mode=development --config webpack/webpack.dev.js",
+    "serve": "serve --single build",
+    "lint": "eslint client/app/**/*.js --ignore-path .eslintignore",
+    "lint:fix": "eslint client/app/**/*.js --fix --ignore-path .eslintignore",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }, 
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohamedsamara/react-webpack-starter.git"
+  }, 
+  "keywords": [
+    "react",
+    "webpack", 
+    "sass",
+    "postcss",
+    "eslint" 
+  ],
+  "author": "Mohamed Samara (https://github.com/mohamedsamara)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohamedsamara/react-webpack-starter/issues"
+  },
+  "homepage": "https://github.com/mohamedsamara/react-webpack-starter#readme"
+}
