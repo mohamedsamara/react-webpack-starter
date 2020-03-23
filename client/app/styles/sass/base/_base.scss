@@ -1,0 +1,38 @@
+::selection {
+  background-color: $indigo;
+  color: $white;
+}
+
+html,
+body {
+  min-height: 100vh;
+  overflow: auto;
+}
+
+html {
+  font-size: 14px;
+
+  @include media-breakpoint-up(sm) {
+    font-size: 16px;
+  }
+
+  @include media-breakpoint-up(md) {
+    font-size: 18px;
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: $theme-white;
+  background-size: cover;
+}
+
+a {
+  color: $theme-light-blue;
+  @include transition(color, $transition-speed);
+}
+
+a:hover {
+  color: $theme-primary;
+}

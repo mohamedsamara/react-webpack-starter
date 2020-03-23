@@ -1,0 +1,53 @@
+.page-title {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.social-icons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  @include flex();
+
+  li {
+    margin: 10px;
+    cursor: pointer;
+    @include animation-name(fade);
+    @include animation-duration(3s);
+    @include animation-iteration-count(infinite);
+    @include animation-fill-mode(both);
+    @include animation-direction(alternate);
+    @include animation-timing-function(ease-in-out);
+  }
+
+  .social-icon {
+    padding: 10px;
+    color: $white;
+    font-size: 1.2rem;
+  }
+
+  .twitter {
+    background-color: $twitter-color;
+  }
+
+  .facebook {
+    background-color: $facebook-color;
+  }
+
+  .instagram {
+    background-color: $instagram-color;
+  }
+}
+
+@include keyframes(fade) {
+  0% {
+    opacity: 0.2;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
