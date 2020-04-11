@@ -30,7 +30,7 @@ body {
 
 a {
   color: $theme-light-blue;
-  @include transition(color, $transition-speed);
+  @include transition(color $transition-speed);
 }
 
 a:hover {

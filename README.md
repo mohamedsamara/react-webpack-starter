@@ -3,9 +3,9 @@
 * features:
   * Webpack to bundle assets, scripts, styles, images
   * React for displaying UI components
-  * Sass preprocessor provides features don't exist in CSS 
-  * PostCSS is used to apply some useful plugins like Autoprefixer and others 
-  * ESLint is configured to find syntax errors in the code  
+  * Sass preprocessor provides styling features 
+  * PostCSS is used to automate CSS operations
+  * ESLint linter tool is used to find code problems and mantain code quality   
 
 ## Install
 

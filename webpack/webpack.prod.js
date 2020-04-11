@@ -66,6 +66,15 @@ module.exports = merge(common, {
           },
         ],
       },
+      {
+        test: /\.html$/,
+        use: [
+          {
+            loader: 'html-loader',
+            options: { minimize: true },
+          },
+        ],
+      },
     ],
   },
   performance: {
@@ -135,9 +144,9 @@ module.exports = merge(common, {
       filename: 'css/[name].[hash].css',
     }),
     new WebpackPwaManifest({
-      name: 'Webpack Starter',
+      name: 'React Webpack Starter',
       short_name: 'WebpackStarter',
-      description: 'Webpack Starter!',
+      description: 'React Webpack Starter!',
       background_color: '#fff',
       theme_color: '#4a68aa',
       inject: true,

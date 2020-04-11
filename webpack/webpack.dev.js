@@ -16,7 +16,6 @@ module.exports = merge(common, {
   output: {
     path: path.join(CURRENT_WORKING_DIR, 'build'),
     filename: '[name].js',
-    publicPath: '/',
   },
   devtool: 'cheap-module-eval-source-map',
   module: {
