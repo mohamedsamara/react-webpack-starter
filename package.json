@@ -79,11 +79,9 @@
     "@material-ui/icons": "^4.5.1",
     "@material-ui/styles": "^4.6.0",
     "axios": "^0.19.0",
-    "boostrap": "^2.0.0",
-    "bootstrap": "^4.4.1",
+    "bootstrap": "^4.5.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-hook-form": "^5.1.1",
     "react-router-dom": "^5.1.2"
   }
 }
